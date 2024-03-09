@@ -20,9 +20,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nixos-wsl-vscode = {
-      url = "github:Eduardogbg/nixos-wsl-vscode/a8eea7acd088717b329bed6c9a9b82a1b60396b7";
-    };
+    # nixos-wsl-vscode = {
+    #   url = "github:Eduardogbg/nixos-wsl-vscode/a8eea7acd088717b329bed6c9a9b82a1b60396b7";
+    # };
   };
 
 
@@ -38,7 +38,7 @@
         specialArgs = {inherit inputs;};
         modules = [
           inputs.nixos-wsl.nixosModules.wsl
-          inputs.nixos-wsl-vscode.nixosModules.vscodeServerWsl
+          # inputs.nixos-wsl-vscode.nixosModules.vscodeServerWsl
           { nix.registry.nixpkgs.flake = nixpkgs; }
           ./configuration.nix
           { nixpkgs.overlays = [inputs.cornelis.overlays.cornelis]; }
