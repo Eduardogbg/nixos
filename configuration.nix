@@ -27,6 +27,14 @@
     }
   ];
 
+  wsl = {
+    enable = true;
+    defaultUser = "eduardo";
+    nativeSystemd = true;
+    startMenuLaunchers = true;
+    useWindowsDriver = true;
+  };
+
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
    

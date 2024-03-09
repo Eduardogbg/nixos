@@ -37,6 +37,7 @@
       nixosConfigurations.default = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
         modules = [
+          inputs.nixos-wsl.nixosModules.wsl
           inputs.nixos-wsl-vscode.nixosModules.vscodeServerWsl
           { nix.registry.nixpkgs.flake = nixpkgs; }
           ./configuration.nix
