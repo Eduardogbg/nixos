@@ -37,14 +37,6 @@
     };
   };
 
-  wsl = {
-    enable = true;
-    defaultUser = "eduardo";
-    nativeSystemd = true;
-    startMenuLaunchers = true;
-    useWindowsDriver = true;
-  };
-
   # networking.hostName = "DESKTOP-A64068I";
 
   # This value determines the NixOS release from which the default
