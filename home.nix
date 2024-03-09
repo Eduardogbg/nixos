@@ -48,6 +48,10 @@
     nix-direnv.enable = true;
   };
 
+  programs.nix-ld.libraries = [
+    pkgs.zlib
+  ];
+
   programs.bash.enable = true;
 
   home.packages = with pkgs; [];
