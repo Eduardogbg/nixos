@@ -56,7 +56,7 @@
     ".vscode-server/server-env-setup".text = ''
       export PATH=$PATH:${lib.strings.makeBinPath [ pkgs.wget ]}
       export EDITOR="code --wait"
-    ''
+    '';
   };
   # ---
 
