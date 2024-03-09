@@ -53,14 +53,10 @@
   home.packages = with pkgs; [];
 
   home.file = with pkgs; {
-    # ".emacs.d" = {
-    #   source = fetchFromGitHub {
-    #     owner = "doomemacs";
-    #     repo = "doomemacs";
-    #     rev = "98d753e1036f76551ccaa61f5c810782cda3b48a";
-    #     hash = "sha256-HbWLLaNhGbAkaHCb0nXwE4YpVfbKF4fHxux49jdJ+Go=";
-    #   };
-    # };
+    ".vscode-server/server-env-setup".text = ''
+      export PATH=$PATH:${lib.strings.makeBinPath [ pkgs.wget ]}
+      export EDITOR="code --wait"
+    ''
   };
   # ---
 
