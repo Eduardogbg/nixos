@@ -37,10 +37,6 @@
     };
   };
 
-  wsl.enable = true;
-  wsl.defaultUser = "eduardo";
-  wsl.nativeSystemd = true;
-  
   # networking.hostName = "DESKTOP-A64068I";
 
   # This value determines the NixOS release from which the default
