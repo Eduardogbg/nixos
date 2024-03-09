@@ -40,7 +40,6 @@
           inputs.nixos-wsl-vscode.nixosModules.vscodeServerWsl
           { nix.registry.nixpkgs.flake = nixpkgs; }
           ./configuration.nix
-          inputs.home-manager.nixosModules.default
           { nixpkgs.overlays = [inputs.cornelis.overlays.cornelis]; }
 	      ];
       };
