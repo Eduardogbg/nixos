@@ -21,7 +21,7 @@
     };
 
     nixos-wsl-vscode = {
-      url = "github:Eduardogbg/nixos-wsl-vscode";
+      url = "github:Eduardogbg/nixos-wsl-vscode/d1c84a2a674a21798dec17d588a18a8ea4f317da";
     };
   };
 
